@@ -209,7 +209,7 @@ set(HARFBUZZ_MIN_VERSION "2.0.0")
 if (FT_WITH_HARFBUZZ)
   find_package(HarfBuzz ${HARFBUZZ_MIN_VERSION} REQUIRED)
 else ()
-  find_package(HarfBuzz ${HARFBUZZ_MIN_VERSION})
+#  find_package(HarfBuzz ${HARFBUZZ_MIN_VERSION})
 endif ()
 
 if (FT_WITH_PNG)
@@ -233,7 +233,7 @@ endif ()
 if (FT_WITH_BROTLI)
   find_package(BrotliDec REQUIRED)
 else ()
-  find_package(BrotliDec)
+#  find_package(BrotliDec)
 endif ()
 
 # Create the configuration file
@@ -584,4 +584,4 @@ set(CPACK_COMPONENT_HEADERS_DEPENDS libraries)
 set(CPACK_COMPONENT_LIBRARIES_GROUP "Development")
 set(CPACK_COMPONENT_HEADERS_GROUP "Development")
 
-include(CPack)
+#include(CPack)
